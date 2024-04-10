@@ -1,2 +1,2 @@
-# International debt analysis using SQL
+# International debt analysis
 TBD
