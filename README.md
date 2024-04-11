@@ -42,4 +42,24 @@ ORDER BY total_debt DESC
 LIMIT 1;
 ```
 
+- What is the average amount of debt for different debt indicators? Include indicator code aliased as debt_indicator and let the average debt column in the output be aliased as average_debt.
+
+```sql
+SELECT indicator_code AS debt_indicator, indicator_name, AVG(debt) AS average_debt
+FROM international_debt
+GROUP BY indicator_code, indicator_name
+ORDER BY average_debt DESC;
+```
+
+- Now to check the country with highest amount of principal repayments in 'DT.AMT.DLXF.CD' category.
+
+```sql
+SELECT country_name, indicator_name
+FROM international_debt 
+WHERE debt = (SELECT MAX(debt)
+              FROM international_debt 
+              WHERE indicator_code = 'DT.AMT.DLXF.CD');
+```
+
+
 
