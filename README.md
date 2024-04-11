@@ -68,12 +68,10 @@ WHERE debt = (SELECT MAX(debt)
 
 ## Technologies used
 
-**SQL**: For data extraction and loading.
-
 **Database Management System**: PostgreSQL to host and manage the dataset.
 
-**Programming languages**: SQL for data processing and exploration.
+**Programming languages**: SQL for data extraction, processing and data exploration.
 
-**Conclusion**: 
+## Conclusion: 
 
 
