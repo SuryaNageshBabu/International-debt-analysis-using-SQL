@@ -61,5 +61,14 @@ WHERE debt = (SELECT MAX(debt)
               WHERE indicator_code = 'DT.AMT.DLXF.CD');
 ```
 
+## Technologies used
+
+**SQL**: For data extraction and loading.
+
+**Database Management System**: PostgreSQL to host and manage the dataset.
+
+**Programming languages**: SQL for data processing and exploration.
+
+**Conclusion**: 
 
 
