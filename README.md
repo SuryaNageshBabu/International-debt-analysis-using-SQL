@@ -72,6 +72,6 @@ WHERE debt = (SELECT MAX(debt)
 
 **Programming languages**: SQL for data extraction, processing and data exploration.
 
-## Conclusion: 
+ 
 
 
